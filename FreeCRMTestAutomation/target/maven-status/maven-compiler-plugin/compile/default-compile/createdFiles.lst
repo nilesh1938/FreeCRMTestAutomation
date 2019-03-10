@@ -1,0 +1,7 @@
+com\crm\qa\base\BasePage.class
+com\crm\qa\pages\HomePage.class
+com\crm\qa\util\TestUtil.class
+com\crm\qa\util\ExtentReporterNG.class
+com\crm\qa\pages\LoginPage.class
+com\crm\qa\util\TopMenu.class
+com\crm\qa\pages\ContactPage.class

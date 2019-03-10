@@ -1,0 +1,199 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<testng-results skipped="0" failed="2" ignored="0" total="6" passed="4">
+  <reporter-output>
+  </reporter-output>
+  <suite name="Suite" duration-ms="128103" started-at="2019-03-10T10:32:08Z" finished-at="2019-03-10T10:34:16Z">
+    <groups>
+    </groups>
+    <test name="test1" duration-ms="43916" started-at="2019-03-10T10:32:08Z" finished-at="2019-03-10T10:32:52Z">
+      <class name="com.crm.qa.testcases.test.LoginTest">
+        <test-method status="PASS" signature="setup()[pri:0, instance:com.crm.qa.testcases.test.LoginTest@124753a]" name="setup" is-config="true" duration-ms="18849" started-at="2019-03-10T10:32:08Z" finished-at="2019-03-10T10:32:27Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- setup -->
+        <test-method status="FAIL" signature="loginTest()[pri:0, instance:com.crm.qa.testcases.test.LoginTest@124753a]" name="loginTest" duration-ms="23630" started-at="2019-03-10T10:32:27Z" finished-at="2019-03-10T10:32:51Z">
+          <exception class="org.openqa.selenium.NoSuchElementException">
+            <message>
+              <![CDATA[no such element: Unable to locate element: {"method":"xpath","selector":"//i[@class='fa fa-sign-out icon-2x']"}
+  (Session info: chrome=72.0.3626.121)
+  (Driver info: chromedriver=2.45.615291 (ec3682e3c9061c10f26ea9e5cdcf3c53f3f74387),platform=Windows NT 6.1.7600 x86) (WARNING: The server did not provide any stacktrace information)
+Command duration or timeout: 0 milliseconds
+For documentation on this error, please visit: https://www.seleniumhq.org/exceptions/no_such_element.html
+Build info: version: '3.141.59', revision: 'e82be7d358', time: '2018-11-14T08:17:03'
+System info: host: 'ADMIN-PC', ip: '192.168.1.5', os.name: 'Windows 7', os.arch: 'x86', os.version: '6.1', java.version: '1.8.0_191'
+Driver info: org.openqa.selenium.chrome.ChromeDriver
+Capabilities {acceptInsecureCerts: false, acceptSslCerts: false, applicationCacheEnabled: false, browserConnectionEnabled: false, browserName: chrome, chrome: {chromedriverVersion: 2.45.615291 (ec3682e3c9061c..., userDataDir: C:\Users\Admin\AppData\Loca...}, cssSelectorsEnabled: true, databaseEnabled: false, goog:chromeOptions: {debuggerAddress: localhost:52083}, handlesAlerts: true, hasTouchScreen: false, javascriptEnabled: true, locationContextEnabled: true, mobileEmulationEnabled: false, nativeEvents: true, networkConnectionEnabled: false, pageLoadStrategy: normal, platform: XP, platformName: XP, proxy: Proxy(), rotatable: false, setWindowRect: true, strictFileInteractability: false, takesHeapSnapshot: true, takesScreenshot: true, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unexpectedAlertBehaviour: ignore, unhandledPromptBehavior: ignore, version: 72.0.3626.121, webStorageEnabled: true}
+Session ID: ac2991ad59cc5f1b9b2c1faf3fa6c73d
+*** Element info: {Using=xpath, value=//i[@class='fa fa-sign-out icon-2x']}]]>
+            </message>
+            <full-stacktrace>
+              <![CDATA[org.openqa.selenium.NoSuchElementException: no such element: Unable to locate element: {"method":"xpath","selector":"//i[@class='fa fa-sign-out icon-2x']"}
+  (Session info: chrome=72.0.3626.121)
+  (Driver info: chromedriver=2.45.615291 (ec3682e3c9061c10f26ea9e5cdcf3c53f3f74387),platform=Windows NT 6.1.7600 x86) (WARNING: The server did not provide any stacktrace information)
+Command duration or timeout: 0 milliseconds
+For documentation on this error, please visit: https://www.seleniumhq.org/exceptions/no_such_element.html
+Build info: version: '3.141.59', revision: 'e82be7d358', time: '2018-11-14T08:17:03'
+System info: host: 'ADMIN-PC', ip: '192.168.1.5', os.name: 'Windows 7', os.arch: 'x86', os.version: '6.1', java.version: '1.8.0_191'
+Driver info: org.openqa.selenium.chrome.ChromeDriver
+Capabilities {acceptInsecureCerts: false, acceptSslCerts: false, applicationCacheEnabled: false, browserConnectionEnabled: false, browserName: chrome, chrome: {chromedriverVersion: 2.45.615291 (ec3682e3c9061c..., userDataDir: C:\Users\Admin\AppData\Loca...}, cssSelectorsEnabled: true, databaseEnabled: false, goog:chromeOptions: {debuggerAddress: localhost:52083}, handlesAlerts: true, hasTouchScreen: false, javascriptEnabled: true, locationContextEnabled: true, mobileEmulationEnabled: false, nativeEvents: true, networkConnectionEnabled: false, pageLoadStrategy: normal, platform: XP, platformName: XP, proxy: Proxy(), rotatable: false, setWindowRect: true, strictFileInteractability: false, takesHeapSnapshot: true, takesScreenshot: true, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unexpectedAlertBehaviour: ignore, unhandledPromptBehavior: ignore, version: 72.0.3626.121, webStorageEnabled: true}
+Session ID: ac2991ad59cc5f1b9b2c1faf3fa6c73d
+*** Element info: {Using=xpath, value=//i[@class='fa fa-sign-out icon-2x']}
+at sun.reflect.NativeConstructorAccessorImpl.newInstance0(Native Method)
+at sun.reflect.NativeConstructorAccessorImpl.newInstance(NativeConstructorAccessorImpl.java:62)
+at sun.reflect.DelegatingConstructorAccessorImpl.newInstance(DelegatingConstructorAccessorImpl.java:45)
+at java.lang.reflect.Constructor.newInstance(Constructor.java:423)
+at org.openqa.selenium.remote.ErrorHandler.createThrowable(ErrorHandler.java:214)
+at org.openqa.selenium.remote.ErrorHandler.throwIfResponseFailed(ErrorHandler.java:166)
+at org.openqa.selenium.remote.http.JsonHttpResponseCodec.reconstructValue(JsonHttpResponseCodec.java:40)
+at org.openqa.selenium.remote.http.AbstractHttpResponseCodec.decode(AbstractHttpResponseCodec.java:80)
+at org.openqa.selenium.remote.http.AbstractHttpResponseCodec.decode(AbstractHttpResponseCodec.java:44)
+at org.openqa.selenium.remote.HttpCommandExecutor.execute(HttpCommandExecutor.java:158)
+at org.openqa.selenium.remote.service.DriverCommandExecutor.execute(DriverCommandExecutor.java:83)
+at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:552)
+at org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:323)
+at org.openqa.selenium.remote.RemoteWebDriver.findElementByXPath(RemoteWebDriver.java:428)
+at org.openqa.selenium.By$ByXPath.findElement(By.java:353)
+at org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:315)
+at org.openqa.selenium.support.pagefactory.DefaultElementLocator.findElement(DefaultElementLocator.java:69)
+at org.openqa.selenium.support.pagefactory.internal.LocatingElementHandler.invoke(LocatingElementHandler.java:38)
+at com.sun.proxy.$Proxy7.click(Unknown Source)
+at com.crm.qa.util.TopMenu.logOut(TopMenu.java:47)
+at com.crm.qa.testcases.test.LoginTest.loginTest(LoginTest.java:38)
+at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+at sun.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)
+at sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+at java.lang.reflect.Method.invoke(Method.java:498)
+at org.testng.internal.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:124)
+at org.testng.internal.Invoker.invokeMethod(Invoker.java:583)
+at org.testng.internal.Invoker.invokeTestMethod(Invoker.java:719)
+at org.testng.internal.Invoker.invokeTestMethods(Invoker.java:989)
+at org.testng.internal.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:125)
+at org.testng.internal.TestMethodWorker.run(TestMethodWorker.java:109)
+at org.testng.TestRunner.privateRun(TestRunner.java:648)
+at org.testng.TestRunner.run(TestRunner.java:505)
+at org.testng.SuiteRunner.runTest(SuiteRunner.java:455)
+at org.testng.SuiteRunner.access$000(SuiteRunner.java:40)
+at org.testng.SuiteRunner$SuiteWorker.run(SuiteRunner.java:489)
+at org.testng.internal.thread.ThreadUtil$1.call(ThreadUtil.java:52)
+at java.util.concurrent.FutureTask.run(FutureTask.java:266)
+at java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1149)
+at java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:624)
+at java.lang.Thread.run(Thread.java:748)
+]]>
+            </full-stacktrace>
+          </exception> <!-- org.openqa.selenium.NoSuchElementException -->
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- loginTest -->
+        <test-method status="PASS" signature="tearDown(org.testng.ITestResult)[pri:0, instance:com.crm.qa.testcases.test.LoginTest@124753a]" name="tearDown" is-config="true" duration-ms="1403" started-at="2019-03-10T10:32:51Z" finished-at="2019-03-10T10:32:52Z">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[[TestResult name=loginTest status=FAILURE method=LoginTest.loginTest()[pri:0, instance:com.crm.qa.testcases.test.LoginTest@124753a] output={null}]]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- tearDown -->
+      </class> <!-- com.crm.qa.testcases.test.LoginTest -->
+    </test> <!-- test1 -->
+    <test name="test2" duration-ms="128103" started-at="2019-03-10T10:32:08Z" finished-at="2019-03-10T10:34:16Z">
+      <class name="com.crm.qa.testcases.test.ContactsTest">
+        <test-method status="PASS" signature="setup()[pri:0, instance:com.crm.qa.testcases.test.ContactsTest@19b4d0f]" name="setup" is-config="true" duration-ms="18849" started-at="2019-03-10T10:32:08Z" finished-at="2019-03-10T10:32:27Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- setup -->
+        <test-method status="FAIL" signature="checkSortofCheckedRecordOptionTest()[pri:0, instance:com.crm.qa.testcases.test.ContactsTest@19b4d0f]" name="checkSortofCheckedRecordOptionTest" duration-ms="16193" started-at="2019-03-10T10:32:27Z" finished-at="2019-03-10T10:32:43Z">
+          <exception class="java.lang.AssertionError">
+            <message>
+              <![CDATA[Dropdown values are not sorted expected [true] but found [false]]]>
+            </message>
+            <full-stacktrace>
+              <![CDATA[java.lang.AssertionError: Dropdown values are not sorted expected [true] but found [false]
+at org.testng.Assert.fail(Assert.java:96)
+at org.testng.Assert.failNotEquals(Assert.java:776)
+at org.testng.Assert.assertTrue(Assert.java:44)
+at com.crm.qa.testcases.test.ContactsTest.checkSortofCheckedRecordOptionTest(ContactsTest.java:50)
+at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+at sun.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)
+at sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+at java.lang.reflect.Method.invoke(Method.java:498)
+at org.testng.internal.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:124)
+at org.testng.internal.Invoker.invokeMethod(Invoker.java:583)
+at org.testng.internal.Invoker.invokeTestMethod(Invoker.java:719)
+at org.testng.internal.Invoker.invokeTestMethods(Invoker.java:989)
+at org.testng.internal.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:125)
+at org.testng.internal.TestMethodWorker.run(TestMethodWorker.java:109)
+at org.testng.TestRunner.privateRun(TestRunner.java:648)
+at org.testng.TestRunner.run(TestRunner.java:505)
+at org.testng.SuiteRunner.runTest(SuiteRunner.java:455)
+at org.testng.SuiteRunner.access$000(SuiteRunner.java:40)
+at org.testng.SuiteRunner$SuiteWorker.run(SuiteRunner.java:489)
+at org.testng.internal.thread.ThreadUtil$1.call(ThreadUtil.java:52)
+at java.util.concurrent.FutureTask.run(FutureTask.java:266)
+at java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1149)
+at java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:624)
+at java.lang.Thread.run(Thread.java:748)
+]]>
+            </full-stacktrace>
+          </exception> <!-- java.lang.AssertionError -->
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- checkSortofCheckedRecordOptionTest -->
+        <test-method status="PASS" signature="close()[pri:0, instance:com.crm.qa.testcases.test.ContactsTest@19b4d0f]" name="close" is-config="true" duration-ms="684" started-at="2019-03-10T10:32:43Z" finished-at="2019-03-10T10:32:44Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- close -->
+        <test-method status="PASS" signature="setup()[pri:0, instance:com.crm.qa.testcases.test.ContactsTest@19b4d0f]" name="setup" is-config="true" duration-ms="3672" started-at="2019-03-10T10:32:44Z" finished-at="2019-03-10T10:32:48Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- setup -->
+        <test-method status="PASS" signature="checkSortofViewOptionTest()[pri:0, instance:com.crm.qa.testcases.test.ContactsTest@19b4d0f]" name="checkSortofViewOptionTest" duration-ms="13656" started-at="2019-03-10T10:32:48Z" finished-at="2019-03-10T10:33:01Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- checkSortofViewOptionTest -->
+        <test-method status="PASS" signature="close()[pri:0, instance:com.crm.qa.testcases.test.ContactsTest@19b4d0f]" name="close" is-config="true" duration-ms="697" started-at="2019-03-10T10:33:01Z" finished-at="2019-03-10T10:33:02Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- close -->
+        <test-method status="PASS" signature="setup()[pri:0, instance:com.crm.qa.testcases.test.ContactsTest@19b4d0f]" name="setup" is-config="true" duration-ms="3677" started-at="2019-03-10T10:33:02Z" finished-at="2019-03-10T10:33:06Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- setup -->
+        <test-method status="PASS" signature="createNewContact()[pri:0, instance:com.crm.qa.testcases.test.ContactsTest@19b4d0f]" name="createNewContact" duration-ms="20787" started-at="2019-03-10T10:33:06Z" finished-at="2019-03-10T10:33:26Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- createNewContact -->
+        <test-method status="PASS" signature="close()[pri:0, instance:com.crm.qa.testcases.test.ContactsTest@19b4d0f]" name="close" is-config="true" duration-ms="721" started-at="2019-03-10T10:33:26Z" finished-at="2019-03-10T10:33:27Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- close -->
+        <test-method status="PASS" signature="setup()[pri:0, instance:com.crm.qa.testcases.test.ContactsTest@19b4d0f]" name="setup" is-config="true" duration-ms="3591" started-at="2019-03-10T10:33:27Z" finished-at="2019-03-10T10:33:31Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- setup -->
+        <test-method status="PASS" signature="deleteCheckedRecordsTest()[pri:0, instance:com.crm.qa.testcases.test.ContactsTest@19b4d0f]" name="deleteCheckedRecordsTest" duration-ms="23907" started-at="2019-03-10T10:33:31Z" finished-at="2019-03-10T10:33:55Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- deleteCheckedRecordsTest -->
+        <test-method status="PASS" signature="close()[pri:0, instance:com.crm.qa.testcases.test.ContactsTest@19b4d0f]" name="close" is-config="true" duration-ms="712" started-at="2019-03-10T10:33:55Z" finished-at="2019-03-10T10:33:55Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- close -->
+        <test-method status="PASS" signature="setup()[pri:0, instance:com.crm.qa.testcases.test.ContactsTest@19b4d0f]" name="setup" is-config="true" duration-ms="3630" started-at="2019-03-10T10:33:55Z" finished-at="2019-03-10T10:33:59Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- setup -->
+        <test-method status="PASS" signature="selectCheckedRecordOptionTest()[pri:0, instance:com.crm.qa.testcases.test.ContactsTest@19b4d0f]" name="selectCheckedRecordOptionTest" duration-ms="16566" started-at="2019-03-10T10:33:59Z" finished-at="2019-03-10T10:34:16Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- selectCheckedRecordOptionTest -->
+        <test-method status="PASS" signature="close()[pri:0, instance:com.crm.qa.testcases.test.ContactsTest@19b4d0f]" name="close" is-config="true" duration-ms="724" started-at="2019-03-10T10:34:16Z" finished-at="2019-03-10T10:34:16Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- close -->
+      </class> <!-- com.crm.qa.testcases.test.ContactsTest -->
+    </test> <!-- test2 -->
+  </suite> <!-- Suite -->
+</testng-results>
