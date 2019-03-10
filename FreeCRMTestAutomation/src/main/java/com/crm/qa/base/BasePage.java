@@ -32,6 +32,8 @@ public class BasePage {
 			FileInputStream fis = new FileInputStream(
 					"C:\\Users\\Admin\\workspace\\FreeCRMTestAutomation\\src\\main\\java\\com\\crm\\qa\\config\\config.properties");
 			prop.load(fis);
+			
+			//this is new commit
 
 		} catch (Exception e) {
 			e.getMessage();
